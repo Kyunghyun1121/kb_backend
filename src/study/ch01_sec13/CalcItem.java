@@ -1,4 +1,4 @@
-package ch01_sec13;
+package study.ch01_sec13;
 
 import java.util.Scanner;
 
