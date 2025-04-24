@@ -9,18 +9,31 @@ public class RandomExamplePractice {
     long count = 0;
     boolean flag = false;
     while(!flag) {
+      count++;
       //System.out.println((count+1)+"차 시도 : ");
-      System.out.println((count+1)+"차 시도 : ");
+      System.out.println(count+"차 시도 : ");
       Random random = new Random();
       int[] choseNumber = new int[6];
+      boolean[] chose = new boolean[46];
       int[] selectedNumber = new int[6];
+      boolean[] selected = new boolean[46];
 
       for(int i = 0; i < choseNumber.length; i++) {
-        choseNumber[i] = random.nextInt(45) + 1;
+        int temp = random.nextInt(45) + 1;
+        while(chose[temp]) {
+          temp = random.nextInt(45) + 1;
+        }
+        choseNumber[i] = temp;
+        chose[temp] = true;
       }
 
       for(int i = 0; i < choseNumber.length; i++) {
-        selectedNumber[i] = random.nextInt(45) + 1;
+        int temp = random.nextInt(45) + 1;
+        while(selected[temp]) {
+          temp = random.nextInt(45) + 1;
+        }
+        selectedNumber[i] = temp;
+        selected[temp] = true;
       }
 
       Arrays.sort(selectedNumber);
@@ -40,8 +53,6 @@ public class RandomExamplePractice {
             System.out.println(choseNumber[j]);
           }
         }
-
-        count++;
       }
     }
 
