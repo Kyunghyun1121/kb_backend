@@ -10,8 +10,8 @@ public class ArrayListExample {
       arrayList.add(new Board());
     }
 
-    System.out.println(arrayList.size());
-    System.out.println("3번째 데이터: " + arrayList.get(3));
+    System.out.println("개수 : " + arrayList.size());
+    System.out.println("3번째 데이터: " + arrayList.get(2));
 
     for (int i = 0; i < arrayList.size(); i++) {
       System.out.println("각 요소 출력: " +arrayList.get(i));

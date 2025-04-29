@@ -12,8 +12,8 @@ public class LinkedListExample {
       linkedList.add(new Board());
     }
 
-    System.out.println(linkedList.size());
-    System.out.println("3번째 데이터: " + linkedList.get(3));
+    System.out.println("개수 : " + linkedList.size());
+    System.out.println("3번째 데이터: " + linkedList.get(2));
 
     for (int i = 0; i < linkedList.size(); i++) {
       System.out.println("각 요소 출력: " +linkedList.get(i));
