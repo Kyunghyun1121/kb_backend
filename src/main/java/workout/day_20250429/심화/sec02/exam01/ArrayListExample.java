@@ -16,7 +16,7 @@ public class ArrayListExample {
     for (int i = 0; i < arrayList.size(); i++) {
       System.out.println("각 요소 출력: " +arrayList.get(i));
     }
-    arrayList.remove(2);
+    arrayList.remove(2 );
     arrayList.remove(2);
     for(Board b : arrayList){
       System.out.println("향상된 for문 출력: " +b);
