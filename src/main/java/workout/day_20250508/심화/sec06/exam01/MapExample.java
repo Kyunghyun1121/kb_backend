@@ -1,0 +1,19 @@
+package workout.day_20250508.심화.sec06.exam01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MapExample {
+
+  public static void main(String[] args) {
+    List<Student> studentList = new ArrayList<Student>();
+    studentList.add(new Student("홍길동", 85));
+    studentList.add(new Student("홍길동", 92));
+    studentList.add(new Student("홍길동", 87));
+
+    studentList.stream()
+        .mapToInt(Student::getScore)
+        .forEach(System.out::println);
+  }
+
+}
