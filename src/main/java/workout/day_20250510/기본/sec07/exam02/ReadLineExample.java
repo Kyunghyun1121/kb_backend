@@ -13,7 +13,7 @@ public class ReadLineExample {
     while(true) {
       String str = br.readLine();
       if (str == null) {break;}
-      System.out.println(line);
+      System.out.println(str);
       line++;
     }
   }
